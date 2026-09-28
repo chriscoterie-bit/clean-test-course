@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7.0.1
       - name: Run pycharm security test
-        uses: tonyboloney/pycharm-security@1.25.1
+        uses: tonybaloney/pycharm-security@1.25.1
   unit_test:
     needs: [security_test]
     runs-on: ubuntu-latest
