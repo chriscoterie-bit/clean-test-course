@@ -7,7 +7,7 @@ on:
 jobs:
   security_test:
     runs-on: ubuntu-latest
-    default: 
+    defaults: 
       run: 
         working-directory: backend
     name: Run pycharm security test
@@ -18,7 +18,7 @@ jobs:
   unit_test:
     needs: [security_test]
     runs-on: ubuntu-latest
-    default:
+    defaults:
       run:
         working-directory: backend
     steps:
